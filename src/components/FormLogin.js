@@ -1,20 +1,20 @@
 import React from "react";
 import { View, Text, TextInput, Button } from "react-native";
-import styles from './styles';
+import LoginStyles from "./styles/LoginStyles";
 
 export default props => (
-  <View style={styles.container}>
-    <View style={styles.titleContainer}>
-      <Text style={styles.title}>Logo</Text>
+  <View style={LoginStyles.container}>
+    <View style={LoginStyles.titleContainer}>
+      <Text style={LoginStyles.title}>Logo</Text>
     </View>
     <View>
-      <TextInput style={styles.input} placeholder="E-mail" />
-      <TextInput style={styles.input} placeholder="Password" />
+      <TextInput style={LoginStyles.input} placeholder="E-mail" />
+      <TextInput style={LoginStyles.input} placeholder="Password" />
     </View>
-    <View style={styles.buttonContainer}>
+    <View style={LoginStyles.buttonContainer}>
       <Button color="#053138" title="Sign Up" onPress={() => false} />
     </View>
-    <View style={styles.buttonContainer}>
+    <View style={LoginStyles.buttonContainer}>
       <Button color="#053138" title="Sign In" onPress={() => false} />
     </View>
   </View>
